@@ -7,11 +7,9 @@
 <input id="in2" type="number" placeholder="Tip"><br>
 <input id="in3" type="number" placeholder="Service Charge"><br>
 
-<button onclick="printResults()"> Accept Input </button>
+<button onclick="calculateTotal()"> calculateTotal </button>
 
-<div id="out1"> </div>
-<div id="out2"> </div>
-<div id="out3"> </div>
+<div id="totalOutput"> </div>
 
 <p style="font-family: Brush Script MT; font-size: 20px; color: orange;"> Total Meal: </p>
 <body style="background-color:hsl(194, 98%, 38%);"> 
@@ -19,11 +17,12 @@
 
 <script>
     function printFriends() {
+        mealPrice = Number(mealprice.value);
+        tip = Number(document.getElementById("tip").value);
+        serviceCharge = Number(serviceCharge.value);
    
-        out1.innerHTML += in1.value + "<br>";
-        out2.innerHTML += in2.value + "<br>";
-        out3.innerHTML += in3.value + "<br>";
+        total = (mealPrice + tip) + (mealPrice + serviceCharge /100);
+       
+        totalOutput.innerHTML = "Total Amount: Php:" + total.toFixed(2);
     }
 </script>
-
-<p style="font-family: Brush Script MT; font-size: 20px; color: orange;"> Total Meal: </p>
