@@ -17,11 +17,11 @@
 
 <script>
     function printFriends() {
-        mealPrice = Number(in1.value);
-        tip = Number(document.getElementById("in2").value);
-        serviceCharge = Number(in3.value);
+        in1 = Number(in1.value);
+        in2 = Number(document.getElementById("in2").value);
+        in3 = Number(in3.value);
    
-        total = (mealPrice + tip) + (mealPrice + serviceCharge /100);
+        total = (in1 + in2) + (in1 + in3 /100);
        
         totalOutput.innerHTML = "Total Amount: Php:" + total.toFixed(2);
     }
