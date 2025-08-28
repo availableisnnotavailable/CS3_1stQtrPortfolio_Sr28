@@ -6,10 +6,11 @@ console.group('Jizz');
 //ibc - 13
 //ptv - 4
 rl = requre('readline')//
-rl1 = rl.createInterface(
+rli = rl.createInterface(
     {
     input: process.stdin,
-})
+}
+)
 rli.on('line', give_station)
 
 function give_station(num) {
