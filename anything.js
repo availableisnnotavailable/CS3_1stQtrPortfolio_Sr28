@@ -9,7 +9,7 @@ rl = requre('readline')
 rl1 = rl.createInterface({
     input: process.stdin,
 })
-RadioNodeList.on('line', give_station)
+rli.on('line', give_station)
 
 function give_station(num) {
     switch (Number(num)) {
