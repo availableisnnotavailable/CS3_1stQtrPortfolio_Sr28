@@ -1,12 +1,13 @@
-console.group('Jizz')
+console.group('Jizz');
 
 //gma - 7
 //abs - cbn - 2
 //tv5 - 5
 //ibc - 13
 //ptv - 4
-rl = requre('readline')
-rl1 = rl.createInterface({
+rl = requre('readline')//
+rl1 = rl.createInterface(
+    {
     input: process.stdin,
 })
 rli.on('line', give_station)
