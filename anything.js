@@ -1,1 +1,1 @@
-console.group('Wiz')
+console.group('Jizz')
