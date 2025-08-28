@@ -5,7 +5,7 @@ console.group('Jizz');
 //tv5 - 5
 //ibc - 13
 //ptv - 4
-rl = requre('readline')//
+rl = require('readline')//
 rli = rl.createInterface(
     {
     input: process.stdin,
